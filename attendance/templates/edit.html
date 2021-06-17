@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Edit Attendance{% endblock %}
+{% block content %}
+          <form method="POST" class="text-center">
+            {% csrf_token %}
+            {{form.as_p}}
+            <hr>
+            <input type="submit" value="Update" class="btn btn-info">
+          </form>
+{% endblock %}
